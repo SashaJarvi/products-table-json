@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Таблица товаров</title>
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="price-filter wrapper">
+            <form action="/" name="form">
+                <label>Цена от:</label>
+                <input class="price-from validating" name="price-from" type="text" placeholder="0">
+                <label>до:</label>
+                <input class="price-to validating" name="price-to" type="text" placeholder="10000">
+                <input class="refresh" type="submit" value="Обновить">
+                <div class="error-messages"></div>
+            </form>
+        </div>
+        <table class="products_table wrapper">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Количество</th>
+                    <th>Цена за единицу</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+        <script type="text/javascript" src="jquery.validate.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
